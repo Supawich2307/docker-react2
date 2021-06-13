@@ -3,8 +3,8 @@ services :
   - docker
 
 before_install :
-  - docker -t a5270ee5f6a9/docker-react2 -f Dockerfile.dev .
+  - docker -t /docker-react2 -f Dockerfile.dev .
   
 
 script :
-  - docker  a5270ee5f6a9/docker-react2 npm run test -- --coverage
+  - docker  /docker-react2 npm run test -- --coverage
