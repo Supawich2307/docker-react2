@@ -3,8 +3,8 @@ services :
   - docker
 
 before_install :
-  - docker build -t my-app/docker-react2 -f Dockerfile.dev .
+  - docker build -t elastic_volhard/docker-react2 -f Dockerfile.dev .
   
 
 script :
-  - docker run my-app/docker-react2 npm run test -- --coverage
+  - docker run elastic_volhard/docker-react2 npm run test -- --coverage
